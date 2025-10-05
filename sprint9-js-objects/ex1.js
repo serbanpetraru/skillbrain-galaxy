@@ -12,7 +12,7 @@ function createRecipe (title, portions, ingredients) {
     const recipe = {
         title: title,
         portions: portions,
-        ingredients: ingredients,
+        ingredients: [...ingredients],
     };
     console.log("Titlul retetei este: ", recipe.title);
     console.log("Numarul de portii este: ", recipe.portions);
