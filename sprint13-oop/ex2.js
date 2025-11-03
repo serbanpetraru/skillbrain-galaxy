@@ -42,7 +42,7 @@ class RacingCar extends Car {
 
 function main() {
 
-  const race1 = new RacingCar("Ferrari", "F8", "Rosu", "10 000");
+  const race1 = new RacingCar("Ferrari", "F8", "Rosu", 10000);
   const race2 = new RacingCar("Lamborghini", "Huracan", "Galben", "5 000");
 
   console.log(race1.properties);
