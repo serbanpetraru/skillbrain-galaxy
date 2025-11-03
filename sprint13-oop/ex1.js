@@ -30,7 +30,7 @@ class Car {
     this.mileage = mileage;
   }
 
-get properties() {
+  get properties() {
     return `Masina de marca ${this.brand}, modelul ${this.model}, de culoare ${this.color}, si cu un kilometraj de ${this.mileage}.`;
   }
 }
