@@ -31,7 +31,7 @@ class RacingCar extends Car {
     super(brand, model, color, mileage);
   }
 
-    participateInTheChampionship(positionInChamphionship) {
+  participateInTheChampionship(positionInChamphionship) {
     if (positionInChamphionship > 0) {
       console.log(`A castigat locul ${positionInChamphionship}`);
     } else {
