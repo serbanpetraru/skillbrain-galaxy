@@ -36,7 +36,7 @@ class Car {
 }
 
 function main() {
-  const car1 = new Car("BMW", "320d xDrive", "Mediterranean Blue", "78 500");
+  const car1 = new Car("BMW", "320d xDrive", "Mediterranean Blue", 78500);
   const car2 = new Car("Mercedes-Benz", "C200 AMG Line", "Selenite Grey", "65 200");
   const car3 = new Car("Audi", "A4 2.0 TFSI quattro", "Glacier White", "54 800");
 
