@@ -15,6 +15,18 @@ function App() {
       status: "In Progress",
       dueDate: new Date(2022, 7, 24),
     },
+    {
+      id: "T-3",
+      name: "13 Create a Design System for Enum Workspace.",
+      status: "Completed",
+      dueDate: new Date(2022, 2, 12),
+    },
+        {
+      id: "T-4",
+      name: "14 Create a Design System for Enum Workspace.",
+      status: "Completed",
+      dueDate: new Date(2022, 2, 23),
+    },
   ];
 
   return (
@@ -30,6 +42,18 @@ function App() {
         status={data[1].status}
         name={data[1].name}
         dueDate={data[1].dueDate}
+      />
+      <TaskCard
+        id={data[2].id}
+        status={data[2].status}
+        name={data[2].name}
+        dueDate={data[2].dueDate}
+      />
+        <TaskCard
+        id={data[3].id}
+        status={data[3].status}
+        name={data[3].name}
+        dueDate={data[3].dueDate}
       />
     </div>
   );
