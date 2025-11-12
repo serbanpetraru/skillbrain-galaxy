@@ -21,29 +21,28 @@ class Car {
     this.mileage = mileage;
   }
 
-get properties() {
+  get properties() {
     return `Masina de marca ${this.brand}, modelul ${this.model}, de culoare ${this.color}, si cu un kilometraj de ${this.mileage}:`;
   }
 }
 
 class RacingCar extends Car {
   constructor(brand, model, color, mileage) {
-    super(brand, model, color, mileage);
+  super(brand, model, color, mileage);
   }
 
   participateInTheChampionship(positionInChamphionship) {
     if (positionInChamphionship > 0) {
-      console.log(`A castigat locul ${positionInChamphionship}`);
+    console.log(`A castigat locul ${positionInChamphionship}`);
     } else {
-      console.log("Nu a castigat niciun premiu");
+    console.log("Nu a castigat niciun premiu");
     }
   }
 }
 
 function main() {
-
   const race1 = new RacingCar("Ferrari", "F8", "Rosu", 10000);
-  const race2 = new RacingCar("Lamborghini", "Huracan", "Galben", "5 000");
+  const race2 = new RacingCar("Lamborghini", "Huracan", "Galben", 5000);
 
   console.log(race1.properties);
   race1.participateInTheChampionship(2);
