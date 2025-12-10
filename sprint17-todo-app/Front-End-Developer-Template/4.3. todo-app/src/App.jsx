@@ -42,7 +42,6 @@ function App() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
-  // --- Handlers pentru modal ---
   const openAddModal = () => {
     setEditingTodo(null);
     setTitle("");
@@ -106,8 +105,6 @@ function App() {
   return (
     <div className="App">
       <div className="app-container">
-
-        {/* --- FORMULAR FUNCȚIONAL DE SUS --- */}
         <Card>
           <h2>Create Todo</h2>
           <form onSubmit={(e) => handleSubmit(e, false)}>
@@ -129,7 +126,6 @@ function App() {
           </p>
         </Card>
 
-        {/* --- LISTA DE TODOS --- */}
         <Card>
           <h1>My todos</h1>
           <Button onClick={openAddModal}>Add +</Button>
@@ -163,7 +159,6 @@ function App() {
         </Card>
       </div>
 
-      {/* --- MODAL PENTRU ADĂUGARE/EDITARE --- */}
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <form className="modal-form" onSubmit={handleSubmit}>
           <h2>{editingTodo ? "Edit Todo" : "Add Todo"}</h2>
